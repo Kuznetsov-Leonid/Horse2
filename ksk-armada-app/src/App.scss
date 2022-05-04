@@ -1,0 +1,53 @@
+//header медиа перенастройка навбара из стандартного bootstrap...
+
+@mixin ColorOp-ty {
+    color: white;
+    opacity: 100%;
+}
+@mixin pad-g {
+    padding: 16px 30px 15px 30px;
+}
+
+//desctop
+@media (min-width: 992px){
+    .navbar-dark {
+        .navbar-nav{
+            text-align: center;
+            .nav-link{
+                @include  ColorOp-ty;
+            }
+        }
+    }
+    .Header_numb_tel{
+        @include pad-g;
+        border-radius: 50px;
+        text-align: center;
+        margin: 0px 0px 0px 0px;
+    }
+}
+
+//mobile
+@media (max-width: 992px){
+    .navbar-dark {
+        .navbar-nav{
+            text-align: center;
+            margin: 30px 0px 20px 0px;
+            .nav-link{
+                font-size: x-large;
+                @include  ColorOp-ty;
+            }
+        }
+    }
+    .Header_numb_tel{
+        @include pad-g;
+        border-radius: 50px;
+        text-align: center;
+        margin: 30px 0px 20px 0px;
+    }
+}
+
+
+
+    
+
+
