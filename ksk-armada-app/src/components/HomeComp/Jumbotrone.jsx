@@ -62,7 +62,10 @@ const JumboPrise = () => {
     return(
         <>
             <Styles>
-                <div fluid className='JumboPrise condComp'>
+                <div 
+                    fluid
+                    className = 'JumboPrise condComp'
+                >
                     <Container>
                         <Card className='overlay'>
                             <Row>
@@ -87,7 +90,10 @@ const JumboEducationHorseRide = () => {
     return(
         <>
             <Styles>
-                <div fluid className='JumboEducationHorseRide condComp'>
+                <div 
+                    fluid
+                    className = 'JumboPrise condComp'
+                >
                     <Container>
                         <Card className='overlay'>
                             <Row>
@@ -114,7 +120,10 @@ const JumboHorseRide = () => {
     return(
         <>
             <Styles>
-                <div fluid className='JumboHorseRide condComp'>
+                <div 
+                    fluid
+                    className = 'JumboPrise condComp'
+                >
                 <Container>
                         <Card className='overlay'>
                             <Row>
@@ -138,7 +147,10 @@ const JumboHoldUpWithHorse = () => {
     return(
         <>
             <Styles>
-                <div fluid className='JumboHoldUpWithHorse condComp'>
+                <div 
+                    fluid
+                    className = 'JumboPrise condComp'
+                >
                 <Container>
                         <Card className='overlay'>
                             <Row>
@@ -162,7 +174,10 @@ const JumboPhotoWithHorse = () => {
     return(
         <>
             <Styles>
-                <div fluid className='JumboPhotoWithHorse condComp'>
+                <div 
+                    fluid
+                    className = 'JumboPrise condComp'
+                >
                 <Container>
                         <Card className='overlay'>
                             <Row>
