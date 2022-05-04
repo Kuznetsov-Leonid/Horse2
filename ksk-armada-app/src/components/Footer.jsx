@@ -186,7 +186,12 @@ const Footer = () => {
                                     />
                                 </Button>
                             </div>
-                                        
+                            <div style={{'textAlign':'center', 'margin':'20px'}}>
+                                <h6>СТАТИСТИКА</h6>
+                                <Button className = "pg-0" variant="link"  href="https://webmaster.yandex.ru/siteinfo/?site=ksk-armada.ru" target='_blank'>
+                                    <img className='iconX' alt='' src="https://yandex.ru/cycounter?ksk-armada.ru&theme=dark&lang=ru"/>
+                                </Button>
+                            </div>
                         </Card>
                         <Card className = 'CardSetting'>
                             <img 
