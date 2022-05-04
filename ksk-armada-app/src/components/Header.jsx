@@ -5,7 +5,7 @@
  *  Header component v2.1.1
  */
 
-import react from 'react';
+import React from 'react';
 import styled from 'styled-components';
 import { Container, Nav, Navbar, Row, Col } from 'react-bootstrap';
 import { BrowserRouter, Route, NavLink, Routes } from 'react-router-dom';
