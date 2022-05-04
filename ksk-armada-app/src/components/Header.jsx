@@ -15,6 +15,13 @@ import Vk from '../Img/Vk.png';
 import Tel from '../Img/Tel.png';
 import Phone from '../Img/Phone.png';
 
+
+/**
+ * Медиа настройки в файле
+ * @class .navbar-dark .navbar-nav .nav-link
+ * ../src/App.scss и ../src/App.css
+ */
+
 const Styles = styled.div`
     .Header{
         height: auto;
@@ -41,14 +48,27 @@ const Styles = styled.div`
     .Header_numb_tel{
         background-color: #FFFFFF;
     }
-    .Header_numb_tel{
-        border-radius: 50px;
-        text-align: center;
-        padding: 16px 30px 15px 30px;
-        margin: 5px 0px 5px 0px;
-    }
     .Header_numb_tel_img{
         width: 24px;
+    }
+    .linkIco{
+        margin: auto;
+        opacity: 85%;
+        transition: 0.5s;
+    }
+    .linkIco:hover{
+        opacity: 100%;
+    }
+    .linkIco:focus{
+        opacity: 100%;
+        background-color: gray;
+        border-radius: 5px;
+        box-shadow: 0 -4px 16px #2f3640;
+    }
+    .linkIco:active{
+        opacity: 100%;
+        background-color: white;
+        box-shadow: 0 -4px 16px #2f3640;
     }
 `;
 
@@ -85,18 +105,34 @@ const Header = () => {
                         <Navbar.Toggle aria-controls = 'responsive-navbar-nav'/>
                         <Navbar.Collapse id = 'responsive-navbar-nav'>
                         <Nav className = 'me-auto' style = {{'margin':'auto'}}>
-                            <Nav.Link eventKey={1} href='#section1'>Услуги</Nav.Link>
-                            <Nav.Link eventKey={2} href='#section2'>О нас</Nav.Link>
-                            <Nav.Link eventKey={3} href='#section3'>Контакты</Nav.Link>
+                            <Nav.Link 
+                                eventKey  = {1} 
+                                href      = '#section1'
+                            >
+                                Услуги
+                            </Nav.Link>
+                            <Nav.Link
+                                eventKey  = {2} 
+                                href      = '#section2'
+                            >
+                                О нас
+                            </Nav.Link>
+                            <Nav.Link 
+                                eventKey  = {3} 
+                                href      = '#section3'
+                            >
+                                Контакты
+                            </Nav.Link>
                         </Nav>
                         <Nav>
                             <Row style = {{'margin':'auto'}}>
                                 <Col>
                                     <Nav.Link 
-                                        eventKey = {4} 
-                                        href     = 'https://vk.com/ksk_armada' 
-                                        style    = {{'padding':'5px'}}
-                                        target   = '_blank'
+                                        eventKey  = {4} 
+                                        href      = 'https://vk.com/ksk_armada' 
+                                        style     = {{'padding':'5px'}}
+                                        target    = '_blank'
+                                        className = 'linkIco'
                                     >
                                         <img 
                                             src       = {Vk} 
@@ -107,10 +143,11 @@ const Header = () => {
                                 </Col>
                                 <Col>
                                     <Nav.Link 
-                                        eventKey = {5} 
-                                        href     = 'https://t.me/ksk_armada' 
-                                        style    = {{'padding':'0'}}
-                                        target   = '_blank'
+                                        eventKey  = {5} 
+                                        href      = 'https://t.me/ksk_armada' 
+                                        style     = {{'padding':'0'}}
+                                        target    = '_blank'
+                                        className = 'linkIco'
                                     >
                                         <img 
                                             src       = {Tel} 
