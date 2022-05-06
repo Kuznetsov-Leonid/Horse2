@@ -92,7 +92,7 @@ const JumboEducationHorseRide = () => {
             <Styles>
                 <div 
                     fluid
-                    className = 'JumboPrise condComp'
+                    className = 'JumboEducationHorseRide condComp'
                 >
                     <Container>
                         <Card className='overlay'>
@@ -122,7 +122,7 @@ const JumboHorseRide = () => {
             <Styles>
                 <div 
                     fluid
-                    className = 'JumboPrise condComp'
+                    className = 'JumboHippotherapy condComp'
                 >
                 <Container>
                         <Card className='overlay'>
@@ -149,7 +149,7 @@ const JumboHoldUpWithHorse = () => {
             <Styles>
                 <div 
                     fluid
-                    className = 'JumboPrise condComp'
+                    className = 'JumboHoldUpWithHorse condComp'
                 >
                 <Container>
                         <Card className='overlay'>
@@ -176,7 +176,7 @@ const JumboPhotoWithHorse = () => {
             <Styles>
                 <div 
                     fluid
-                    className = 'JumboPrise condComp'
+                    className = 'JumboPhotoWithHorse condComp'
                 >
                 <Container>
                         <Card className='overlay'>
