@@ -1,3 +1,8 @@
+.accordion-button {
+  background: rgba(19, 19, 19, 0.6);
+  color: white;
+}
+
 @media (min-width: 992px) {
   .navbar-dark .navbar-nav {
     text-align: center;
