@@ -6,19 +6,14 @@
  */
 
 /**
- *  @To-Dos:
- * 1) Подготовить модальные окна
- * 2) Подготовить кнопки для модальных окон +
- * 3) Доделать стилизацию основного компонента услуг +
- * 4) Доработать массив добавить фотографии +
- * 
  * Если забудешь чё происходит загляни сюда https://learn-reactjs.ru/basics/lists-and-keys
  * Документация по кайфу е жи...
  */
 
-import React from 'react';
+import React, {useState} from 'react';
 import styled from 'styled-components';
 import { Container, Card, Row, Col, Button } from 'react-bootstrap';
+import { ServiceModal } from './ModalComp';
 
 import imgWalk from './img/imgWalk.jpg';
 import imgPhotoSet from './img/imgWidthHorse2.jpg';
@@ -74,6 +69,7 @@ const Service = () => {
      *          записаны нужные ключи для массива обьектов.
      */
     function ServiseItem(props){
+        const [modalShow, setModalShow] = useState(false);
         const serviceTitle = props.serviceTitle
         const serviceText  = props.serviceText
         const serviceImg   = props.serviceImg
@@ -92,7 +88,10 @@ const Service = () => {
                     <Card.Title>{serviceTitle.title}</Card.Title>
                     <Card.Text>{serviceText.text}</Card.Text>
                     <div className = 'btnCardLay'>
-                        <Button className = 'btnCard'>
+                        <Button 
+                            className = 'btnCard'
+                            onClick={() => setModalShow(true)}
+                        >
                             <b>
                                 ПОДРОБНЕЕ
                             </b>
@@ -101,6 +100,12 @@ const Service = () => {
                 </Card.Body>
                 </Card>
             </Col>
+            <ServiceModal
+                show   = {modalShow}
+                onHide = {() => setModalShow(false)}
+                title  = {serviceTitle.title}
+                body   = {serviceText.text}
+            />
         </>
         );
     }
