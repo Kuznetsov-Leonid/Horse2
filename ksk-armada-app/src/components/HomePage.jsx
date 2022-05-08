@@ -7,11 +7,13 @@
 
 import React from 'react';
 import Carusel from './HomeComp/Carusel';
+import Services from './HomeComp/Service';
 
 const HomePage = () => {
     return(
         <>
             <Carusel/>
+            <Services/>
         </>
     );
 };
