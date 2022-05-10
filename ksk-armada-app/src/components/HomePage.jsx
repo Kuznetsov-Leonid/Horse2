@@ -9,6 +9,7 @@ import React from 'react';
 import Carusel from './HomeComp/Carusel';
 import Services from './HomeComp/Service';
 import AboutUs from './HomeComp/AboutUs';
+import CallBack from './HomeComp/CallBack';
 
 const HomePage = () => {
     return(
@@ -16,6 +17,7 @@ const HomePage = () => {
             <Carusel/>
             <Services/>
             <AboutUs/>
+            <CallBack/>
         </>
     );
 };
