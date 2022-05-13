@@ -25,7 +25,7 @@ import Phone from '../Img/Phone.png';
 const Styles = styled.div`
     .Header{
         height: auto;
-        background-color: #07B1BC;
+        background-color:  rgba(30, 33, 44, 1);
         padding: 0;
     }
     .Header_layout{
@@ -51,25 +51,6 @@ const Styles = styled.div`
     .Header_numb_tel_img{
         width: 24px;
     }
-    .linkIco{
-        margin: auto;
-        opacity: 85%;
-        transition: 0.5s;
-    }
-    .linkIco:hover{
-        opacity: 100%;
-    }
-    .linkIco:focus{
-        opacity: 100%;
-        background-color: gray;
-        border-radius: 5px;
-        box-shadow: 0 -4px 16px #2f3640;
-    }
-    .linkIco:active{
-        opacity: 100%;
-        background-color: white;
-        box-shadow: 0 -4px 16px #2f3640;
-    }
 `;
 
 const Obj = {
@@ -85,6 +66,7 @@ const Header = () => {
         >
             <Styles>
                 <Navbar 
+                    sticky = "top"
                     collapseOnSelect 
                     variant   = 'dark' 
                     expand    = 'lg'
@@ -105,7 +87,7 @@ const Header = () => {
                         <Navbar.Toggle aria-controls = 'responsive-navbar-nav'/>
                         <Navbar.Collapse id = 'responsive-navbar-nav'>
                         <Nav className = 'me-auto' style = {{'margin':'auto'}}>
-                            <Nav.Link 
+                            {/* <Nav.Link 
                                 eventKey  = {1} 
                                 href      = '#section1'
                             >
@@ -122,41 +104,9 @@ const Header = () => {
                                 href      = '#section3'
                             >
                                 Контакты
-                            </Nav.Link>
+                            </Nav.Link> */}
                         </Nav>
                         <Nav>
-                            <Row style = {{'margin':'auto'}}>
-                                <Col>
-                                    <Nav.Link 
-                                        eventKey  = {4} 
-                                        href      = 'https://vk.com/ksk_armada' 
-                                        style     = {{'padding':'5px'}}
-                                        target    = '_blank'
-                                        className = 'linkIco'
-                                    >
-                                        <img 
-                                            src       = {Vk} 
-                                            alt       = {Obj.alt}
-                                            className = 'Header_nav_Vk'
-                                        />
-                                    </Nav.Link>
-                                </Col>
-                                <Col>
-                                    <Nav.Link 
-                                        eventKey  = {5} 
-                                        href      = 'https://t.me/ksk_armada' 
-                                        style     = {{'padding':'0'}}
-                                        target    = '_blank'
-                                        className = 'linkIco'
-                                    >
-                                        <img 
-                                            src       = {Tel} 
-                                            alt       = {Obj.alt} 
-                                            className = 'Header_nav_Tel'
-                                        />
-                                    </Nav.Link>
-                                </Col>
-                            </Row>
                             <div className = 'Header_numb_tel'>
                                 <img 
                                     src       = {Phone} 

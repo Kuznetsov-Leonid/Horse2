@@ -9,11 +9,12 @@ import React from 'react';
 import styled from 'styled-components';
 import { Container, Card, Accordion } from 'react-bootstrap';
 import horsesBg from './img/horsesBg.jpg';
+import ImgPerson from './img/imgPerson.jpg';
 
 
 const Styles = styled.div`
     .AboutUs{
-        background: url(${horsesBg}) no-repeat fixed top;
+        background: url(${ImgPerson}) no-repeat fixed top;
     }
     .condComp{
         background-size: cover;
@@ -29,7 +30,7 @@ const Styles = styled.div`
         overflow: auto;   
     }
     .overlay{
-        background: rgba(19, 19, 19, 0.6);
+        background: rgba(19, 19, 19, 0.7);
         padding: 5%;
         border-radius: 51px;
         display: block;
@@ -37,6 +38,10 @@ const Styles = styled.div`
     .CardSetting{
         background: transparent;
         border: none;
+    }
+    .AboutUsText{
+        text-align: center;
+        margin: 0px 0px 40px 0px;
     }
 `;
 
@@ -114,13 +119,15 @@ const AboutUs = () => {
                 <div className = 'AboutUs condComp'>
                     <Container>
                         <Card className='overlay'>
-                            <div style = {{'textAlign':'center'}}>
-                                <h1>О нас</h1>
+                            <div className = 'AboutUsText'>
+                                <h4>О нас</h4>
                                 <h6>
                                     Конно-спортивный клуб «Армада» приглашает на <br/>
                                     постой лошадей любого пола и возраста! <br/>
-                                    Работаем с 9:00 до 21:00  
                                 </h6>
+                                <h2>Работаем с 9:00 до 21:00  </h2>
+                                    
+                                
                             </div>
                             <AboutUsMore/>
                         </Card>

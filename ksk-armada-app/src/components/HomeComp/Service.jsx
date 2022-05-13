@@ -22,9 +22,15 @@ import imgPost from './img/imgPost.jpg';
 import imgHorse from './img/imgHorse.jpg';
 import imgStady from './img/imgStady.jpg';
 
+
+/**
+ * Медиа настройки в файле
+ * @class .btnCard .btnCardLay .title
+ * ../src/App.scss и ../src/App.css
+ */
 const Styled = styled.div`
     .Service_bg{
-        background-color: #FD9319;
+        background-color:  rgba(30, 33, 44, 1);
         padding: 40px 0px 40px 0px;
     }
     .Servise_title{
@@ -32,18 +38,7 @@ const Styled = styled.div`
         color: #ffffff;
         margin-bottom: 50px;
     }
-    .btnCardLay{
-        text-align: center;
-        
-    }
-    .btnCard{
-        background-color: #FC712B;
-        color: #000000;
-        border-color: #FC712B;
-    }
-    .btnCard:hover{
-        background-color: #FF5500;
-    }
+    
 `;
 
 const Service = () => {
@@ -77,27 +72,27 @@ const Service = () => {
         <>
             <Col>
                 <Card
-                    className = 'mb-2'
+                    className = 'mb-2 text-white CardSetting'
                 >
-                <Card.Img 
-                    variant = 'top' 
-                    src     = {serviceImg.img} 
-                    alt     = 'KSK Armada'
-                />
-                <Card.Body>
-                    <Card.Title>{serviceTitle.title}</Card.Title>
-                    <Card.Text>{serviceText.text}</Card.Text>
-                    <div className = 'btnCardLay'>
-                        <Button 
-                            className = 'btnCard'
-                            onClick={() => setModalShow(true)}
-                        >
-                            <b>
-                                ПОДРОБНЕЕ
-                            </b>
-                        </Button>
-                    </div>
-                </Card.Body>
+                    <Card.Img 
+                        variant   = 'top' 
+                        src       = {serviceImg.img} 
+                        alt       = 'KSK Armada'
+                        className = 'CardImg'
+                    />
+                    <Card.ImgOverlay>
+                        <Card.Title className = 'title'>{serviceTitle.title}</Card.Title>
+                        <div className = 'btnCardLay'>
+                            <Button 
+                                className = 'btnCard'
+                                onClick={() => setModalShow(true)}
+                            >
+                                <b>
+                                    ПОДРОБНЕЕ
+                                </b>
+                            </Button>
+                        </div>
+                    </Card.ImgOverlay>
                 </Card>
             </Col>
             <ServiceModal

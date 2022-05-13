@@ -19,7 +19,7 @@ import { MapCard } from './Ifraim/Iframe';
 
 const Styles = styled.div`
     .Footer{
-        background-color: #2B8180;
+        background-color: rgba(30, 33, 44, 1);
         height: auto;
         color: #FFFFFF;
         font-family: inherit;
@@ -28,7 +28,6 @@ const Styles = styled.div`
     .CardSetting{
         background: transparent;
         border: none;
-        
     }
     .Footer_icon{
         margin: 10px;
@@ -84,12 +83,15 @@ const Styles = styled.div`
     }
     .SubFooter{
         background-color: #656872;
+        border: none;
+        text-align: center;
     }
     .footer-copir-txt{
         /* extrasmall/regular */
         color: #000;
-        line-height: 150%;
         margin-top: 20px;
+        font-size: .7em;
+        line-height: 150%;
     }
 `;
 
@@ -210,11 +212,11 @@ const Footer = () => {
                 </Card>
             </div>
             <div className = 'SubFooter'>
-                <CardGroup style = {{'textAlign':'center'}}>
+                
                     <Card className = 'CardSetting'>
-                        <p className = 'footer-copir-txt'>&copy;&ensp; All rights reserved. Made with by Orlan1211@yahoo.com. E.S.C. ARMADA</p>
+                        <p className = 'footer-copir-txt'>&copy;&ensp; All rights reserved. Made by Orlan1211@yahoo.com. E.S.C. ARMADA</p>
                     </Card>
-                </CardGroup>
+                
             </div>
         </Styles>
         </>
