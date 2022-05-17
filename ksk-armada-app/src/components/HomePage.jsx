@@ -9,7 +9,7 @@ import React from 'react';
 import Carusel from './HomeComp/Carusel';
 import Services from './HomeComp/Service';
 import AboutUs from './HomeComp/AboutUs';
-import Page404 from './Page404';
+
 
 const HomePage = () => {
     return(

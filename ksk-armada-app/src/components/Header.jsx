@@ -15,6 +15,10 @@ import Vk from '../Img/Vk.png';
 import Tel from '../Img/Tel.png';
 import Phone from '../Img/Phone.png';
 
+//Routing
+import Page404 from './Page404';
+import HomePage from './HomePage';
+
 
 /**
  * Медиа настройки в файле
@@ -121,7 +125,8 @@ const Header = () => {
                 </Navbar>
             </Styles>
             <Routes>
-                    
+                <Route exact path = '/' element={<HomePage/>} />
+                <Route exact path = '*' element={<Page404/>} />
             </Routes>
         </BrowserRouter>
         </>
