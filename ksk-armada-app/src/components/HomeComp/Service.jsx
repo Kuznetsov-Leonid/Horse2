@@ -23,6 +23,7 @@ import imgHorse from './img/imgHorse.jpg';
 import imgStady from './img/imgStady.jpg';
 
 
+
 /**
  * Медиа настройки в файле
  * @class .btnCard .btnCardLay .title
@@ -30,13 +31,21 @@ import imgStady from './img/imgStady.jpg';
  */
 const Styled = styled.div`
     .Service_bg{
-        background-color:  rgba(30, 33, 44, 1);
+        background: linear-gradient(115.95deg, #2B8180 0%, #FC712B 99.52%);
         padding: 40px 0px 40px 0px;
+    }
+    .Service_bg_lay{
+        display: table;
+        margin: 0 auto;
     }
     .Servise_title{
         text-align: center;
-        color: #ffffff;
+        color: black;
         margin-bottom: 50px;
+        background: white;
+        border-radius: 50px;
+        padding: 3px 0px 7px 0px;
+        width: 20rem;
     }
     
 `;
@@ -81,7 +90,7 @@ const Service = () => {
                         className = 'CardImg'
                     />
                     <Card.ImgOverlay>
-                        <Card.Title className = 'title'>{serviceTitle.title}</Card.Title>
+                        <Card.Title className = 'title'><b>{serviceTitle.title}</b></Card.Title>
                         <div className = 'btnCardLay'>
                             <Button 
                                 className = 'btnCard'
@@ -141,9 +150,11 @@ const Service = () => {
         <Styled>
             <div className = 'Service_bg'>
                 <Container>
-                    <h1 className = 'Servise_title'>
-                        Услуги
-                    </h1>
+                    <div className = 'Service_bg_lay'>
+                        <h1 className = 'Servise_title'>
+                            <b>Услуги</b>
+                        </h1>
+                    </div>
                     <ServicesList data = {data}/>
                 </Container>
             </div>

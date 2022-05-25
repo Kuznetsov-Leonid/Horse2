@@ -35,7 +35,7 @@ const Styles = styled.div`
     .condComp{
         background-size: cover;
         color: #efefef;
-        height: 700px;
+        height: 54rem;
         width: auto;
         position: realetive;
         z-index: -2;

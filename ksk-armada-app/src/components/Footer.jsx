@@ -19,7 +19,7 @@ import { MapCard } from './Ifraim/Iframe';
 
 const Styles = styled.div`
     .Footer{
-        background-color: rgba(30, 33, 44, 1);
+        background: linear-gradient(71.65deg, #2B8180 1.66%, #FC712B 100%);
         height: auto;
         color: #FFFFFF;
         font-family: inherit;
@@ -93,6 +93,12 @@ const Styles = styled.div`
         font-size: .7em;
         line-height: 150%;
     }
+    .footer_title{
+        color: black;
+        background: white;
+        border-radius: 50px;
+        padding: 3px 0px 7px 0px;
+    }
 `;
 
 const Obj = {
@@ -115,8 +121,8 @@ const Footer = () => {
                                     'textAlign':'center'
                                     }}
                             >
-                                <h1>
-                                    Наши контакты
+                                <h1 className = 'footer_title'>
+                                    <b>Наши контакты</b>
                                 </h1>
                             </div>
                             <table>
@@ -162,7 +168,7 @@ const Footer = () => {
                             </table>
                             <hr />
                             <div style={{'textAlign':'center'}}>
-                                <h1>Мы в соцсетях</h1>
+                                <h1><b>Мы в соцсетях</b></h1>
                                 <Button 
                                     variant   = 'link'
                                     target    = '_blank'
@@ -214,7 +220,8 @@ const Footer = () => {
             <div className = 'SubFooter'>
                 
                     <Card className = 'CardSetting'>
-                        <p className = 'footer-copir-txt'>&copy;&ensp; All rights reserved. Made by Orlan1211@yahoo.com. E.S.C. ARMADA</p>
+                        <p className = 'footer-copir-txt'><b>&copy;&ensp; All rights reserved. Made by Orlan1211@yahoo.com. for E.S.C. ARMADA</b></p>
+                        <p className = 'footer-copir-txt'><b>Version 2.1.1</b></p>
                     </Card>
                 
             </div>

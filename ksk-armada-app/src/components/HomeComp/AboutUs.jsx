@@ -10,11 +10,12 @@ import styled from 'styled-components';
 import { Container, Card, Accordion } from 'react-bootstrap';
 import horsesBg from './img/horsesBg.jpg';
 import ImgPerson from './img/imgPerson.jpg';
+import pattern from './img/pattern1.jpg';
 
 
 const Styles = styled.div`
     .AboutUs{
-        background: url(${ImgPerson}) no-repeat fixed top;
+        background: url(${pattern}) no-repeat fixed top;
     }
     .condComp{
         background-size: cover;

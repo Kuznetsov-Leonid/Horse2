@@ -29,7 +29,7 @@ import HomePage from './HomePage';
 const Styles = styled.div`
     .Header{
         height: auto;
-        background-color:  rgba(30, 33, 44, 1);
+        background: linear-gradient(65.86deg, #F26638 0%, #FD9319 100%);
         padding: 0;
     }
     .Header_layout{
@@ -86,7 +86,7 @@ const Header = () => {
                                 alt       = {Obj.alt}
                                 className = 'Header_logo' 
                             />
-                            <h6 style={{'margin':'auto'}}>Конно-спортивный клуб</h6>
+                            <h6 style={{'margin':'auto'}}><b>Конно-спортивный клуб</b></h6>
                         </Navbar.Brand>
                         <Navbar.Toggle aria-controls = 'responsive-navbar-nav'/>
                         <Navbar.Collapse id = 'responsive-navbar-nav'>
@@ -117,7 +117,7 @@ const Header = () => {
                                     alt       = {Obj.alt}
                                     className = 'Header_numb_tel_img'
                                 />
-                                +7(967)017-99-63
+                                <b>+7(967)017-99-63</b>
                             </div>
                         </Nav>
                         </Navbar.Collapse>
